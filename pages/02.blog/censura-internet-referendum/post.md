@@ -11,7 +11,7 @@ Traducció de [l'article original](https://ooni.torproject.org/post/internet-cen
 </small>
 
 <small>
-Correcions? Obre un pull request a [github.com](https://github.com/hermes-diactoros/cripto.cat.articles).
+Correcions? Obre un pull request a [github.com](https://github.com/hermes-diactoros/cripto.cat.grav/blob/master/pages/02.blog/censura-internet-referendum/post.md).
 </small>
 
 ***
