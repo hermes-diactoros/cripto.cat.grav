@@ -1,0 +1,31 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+
+{% block content %}
+{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
+
+<section class="hero is-primary">
+	<div class="hero-body">
+		<div class="container">
+			{{ page.content }}
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		{% for child in collection %}
+		<article class="article">
+			{# {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %} #}
+			<a class="has-text-weight-bold" href="{{ child.url }}">{{ child.title }}</a>
+			<p>{{ child.date|date }}</p>
+		</article>
+		{% endfor %}
+
+		{% if config.plugins.pagination.enabled and collection.params.pagination %}
+			{% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+		{% endif %}
+	</div>
+</section>
+{% endblock %}

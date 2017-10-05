@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+#logo {
+	color: hsl(171, 100%, 41%);
+	font-weight: bold;
+	font-family: 'Roboto';
+	font-size: 15pt;
+}
