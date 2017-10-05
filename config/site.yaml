@@ -13,5 +13,7 @@ summary:
   format: short
   size: 300
   delimiter: '==='
+redirects:
+  /censura-internet-referendum.html: /blog/censura-internet-referendum
 blog:
   route: /blog
