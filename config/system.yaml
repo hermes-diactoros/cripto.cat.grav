@@ -37,7 +37,7 @@ pages:
     page: true
     twig: true
   markdown:
-    extra: false
+    extra: true
     auto_line_breaks: false
     auto_url_links: false
     escape_markup: false
@@ -120,8 +120,8 @@ images:
   auto_fix_orientation: false
 media:
   enable_media_timestamp: false
-  upload_limit: 0
   auto_metadata_exif: false
+  upload_limit: 2097152
 session:
   enabled: true
   timeout: 1800
